@@ -13,6 +13,7 @@ export class AppComponent {
 
   onClickedButton() {
     this.displayParagraph = !this.displayParagraph;
-    this.log.push(this.log.length +1)
+    // this.log.push(this.log.length +1)
+    this.log.push(new Date());
   }
 }

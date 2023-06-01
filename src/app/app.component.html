@@ -13,9 +13,9 @@
       <!-- <button class="btn btn-primary" (click)="displayParagraph = !displayParagraph">Display Details</button> -->
       <p *ngIf="displayParagraph">Secret Password: Tuna</p>
       <div 
-      *ngFor="let logItem of log"
-      [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}"
-      [ngClass]="{'text-color': logItem >= 5}">
+      *ngFor="let logItem of log; let i = index"
+      [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+      [ngClass]="{'text-color': i >= 4}">
       {{ logItem }}</div>
     </div>
   </div>
