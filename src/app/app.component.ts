@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignment-3-practicing-directives';
+  displayParagraph = false;
+
+  onClickedButton() {
+    this.displayParagraph = !this.displayParagraph;
+  }
 }
