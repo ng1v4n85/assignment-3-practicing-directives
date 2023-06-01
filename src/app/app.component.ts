@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'assignment-3-practicing-directives';
   displayParagraph = false;
+  log = [];
+
 
   onClickedButton() {
     this.displayParagraph = !this.displayParagraph;
+    this.log.push(this.log.length +1)
   }
 }
